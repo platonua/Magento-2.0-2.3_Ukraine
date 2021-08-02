@@ -8,6 +8,7 @@
 ## Установка:
 
 Вариант 1.
+
 https://marketplace.magento.com/platon-module-platon-pay.html
 
 Вариант 2.
