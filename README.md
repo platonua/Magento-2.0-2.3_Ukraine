@@ -7,6 +7,11 @@
 
 ## Установка:
 
+Вариант 1.
+https://marketplace.magento.com/platon-module-platon-pay.html
+
+Вариант 2.
+
 * Распакуйте архив в корень сайта.
 
 * Установите модуль из админ панели Admin->System->Web Setup Wizard->Module Manager->Platon_PlatonPay->enable
