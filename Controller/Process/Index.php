@@ -170,7 +170,6 @@ class Index extends Action implements HttpPostActionInterface, CsrfAwareActionIn
                     $order->setStatus('platon_payment_successful')
                         ->save();
 
-                    $this->logger->info(var_export($order, true));
                     $this->logger->info("Order {$data['order']} processed as successfull sale");
                     break;
                 case 'REFUND':
