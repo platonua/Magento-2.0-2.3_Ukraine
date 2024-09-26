@@ -14,7 +14,7 @@ use Magento\Framework\App\RequestInterface;
 use Magento\Framework\Session\SessionManager;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Sales\Model\Order;
-use Psr\Log\LoggerInterface;
+use Platon\PlatonPay\Model\Logger\Logger;
 use Magento\Sales\Model\Order\Email\Sender\OrderSender;
 
 class Index extends Action implements HttpPostActionInterface, CsrfAwareActionInterface
@@ -59,7 +59,7 @@ class Index extends Action implements HttpPostActionInterface, CsrfAwareActionIn
     protected $session_manager;
 
     /**
-     * @var LoggerInterface
+     * @var Logger
      */
     protected $logger;
 
@@ -76,7 +76,7 @@ class Index extends Action implements HttpPostActionInterface, CsrfAwareActionIn
      * @param PageFactory     $pageFactory
      * @param Session         $session
      * @param SessionManager  $session_manager
-     * @param LoggerInterface $logger
+     * @param Logger          $logger
      * @param Order           $order
      * @param OrderSender     $order_sender
      */
@@ -85,7 +85,7 @@ class Index extends Action implements HttpPostActionInterface, CsrfAwareActionIn
         PageFactory $pageFactory,
         Session $session,
         SessionManager $session_manager,
-        LoggerInterface $logger,
+        Logger $logger,
         Order $order,
         OrderSender $order_sender
     ) {
